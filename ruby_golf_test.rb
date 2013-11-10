@@ -1,4 +1,3 @@
-$:.unshift "."
 require "minitest/autorun"
 require "ruby_golf"
 
