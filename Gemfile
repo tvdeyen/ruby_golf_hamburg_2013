@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 
-gem "rake"
 gem "guard-minitest"
-gem "method_source"
+gem "sourcify", git: "git@github.com:ngty/sourcify.git"
