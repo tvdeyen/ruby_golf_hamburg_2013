@@ -1,10 +1,3 @@
-GIT
-  remote: git@github.com:thomasjachmann/minitest-ruby_golf_metrics.git
-  revision: 4a85ebc6d9235431aa461304c34b9a9c4e2f8f50
-  specs:
-    minitest-ruby_golf_metrics (0.0.1)
-      sourcify (= 0.6.0.rc4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -31,6 +24,8 @@ GEM
     lumberjack (1.0.4)
     method_source (0.8.2)
     minitest (5.0.8)
+    minitest-ruby_golf_metrics (0.0.1)
+      sourcify (= 0.6.0.rc4)
     pry (0.9.12.3)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -59,4 +54,4 @@ PLATFORMS
 
 DEPENDENCIES
   guard-minitest
-  minitest-ruby_golf_metrics!
+  minitest-ruby_golf_metrics
