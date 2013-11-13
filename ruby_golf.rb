@@ -73,6 +73,7 @@ module RubyGolf
   #           level are prepended by two additional spaces per level away from
   #           the top level
   def self.pretty_hash(h)
+    h.keys.map { |k| "#{k}:\n" + h[k].is_a?(Hash) ? pretty_hash(h[k]) : h[k].map { |v| "- #{v}"}.join("\n") }.join("\n")
   end
 
 
