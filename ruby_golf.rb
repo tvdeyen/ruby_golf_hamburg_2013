@@ -21,9 +21,6 @@ module RubyGolf
   #         changes to upper case get a prepended underscore
   def self.underscore(s)
     s.sub(/\-/, '').gsub(/([A-Z])/) { |m| s[0] == m ? m.downcase : "_#{m.downcase}" }
-    #res = s.sub(/[A-Z]/, $1 || "_#{$1.downcase}")
-    #puts res
-    #res
   end
 
 
