@@ -9,8 +9,7 @@ module RubyGolf
   # output: x'ed out string
   def self.x_out_numbers(n, v)
     s = n.size - v
-    return n if s < 0
-    n.gsub(/^.{#{s}}/, 'x'*s)
+    s < 0 ? n : n.gsub(/^.{#{s}}/, 'x'*s)
   end
 
 
