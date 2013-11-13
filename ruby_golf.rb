@@ -9,7 +9,7 @@ module RubyGolf
   # output: x'ed out string
   def self.x_out_numbers(n, v)
     s = n.size - v
-    s < 0 ? n : n.gsub(/^.{#{s}}/, 'x'*s)
+    s < 0 ? n : n.sub(/^.{#{s}}/, 'x'*s)
   end
 
 
@@ -20,6 +20,7 @@ module RubyGolf
   # ouput:  a 'ruby style' version of the identifier: all lowercase, former case
   #         changes to upper case get a prepended underscore
   def self.underscore(s)
+    #s.scan /[A-Z]/,
   end
 
 
